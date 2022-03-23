@@ -16,6 +16,8 @@ BEGIN
         ELSE if
         sum_def:=sum_def + set1[i];
     END_IF
+     FOR i FROM 0 TO set2.length-1 STEP 1 DO
+    FOR j FROM 0 TO set1.length-1 STEP 1 DO
     IF (set2[j]!==set1[i]) THEN
         sum_def := sum_def +set2[j]
     END_IF
